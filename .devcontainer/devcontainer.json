@@ -1,5 +1,5 @@
 {
-    "name": "Datadex",
+    "name": "devContainer",
     "build": {
         "dockerfile": "../Dockerfile",
         "context": ".."
@@ -10,7 +10,7 @@
                 "files.associations": {
                     "*.sql": "jinja-sql"
                 },
-                "dbt.profilesDirOverride": "/workspaces/datadex/"
+                "dbt.profilesDirOverride": "/workspaces/devContainer/"
             },
             "extensions": [
                 "ms-python.python",
@@ -21,7 +21,6 @@
                 "innoverio.vscode-dbt-power-user",
                 "github.vscode-pull-request-github",
                 "eamodio.gitlens",
-                "GitHub.copilot",
                 "visualstudioexptteam.vscodeintellicode",
                 "bastienboutonnet.vscode-dbt",
                 "vivaxy.vscode-conventional-commits"

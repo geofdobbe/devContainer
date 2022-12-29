@@ -1,4 +1,4 @@
-name: "datadex"
+name: "default"
 version: "1.0.0"
 config-version: 2
 
@@ -12,5 +12,5 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  datadex:
+  default:
     +materialized: external
