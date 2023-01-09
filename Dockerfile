@@ -8,11 +8,10 @@ RUN pip3 --disable-pip-version-check --no-cache-dir install \
     && rm -rf /tmp/pip-tmp
 
 # Configure Workspace
-WORKDIR /workspaces/datadex
-ENV DBT_PROFILES_DIR=/workspaces/datadex
-
+WORKDIR /workspaces/devContainer
+ENV DBT_PROFILES_DIR=/workspaces/devContainer/
 # Install Rill Developer
-RUN wget https://github.com/rilldata/rill-developer/releases/download/v0.17.0/rill_linux_amd64.zip -O /tmp/rill_linux_amd64.zip \
+RUN wget https://github.com/rilldata/rill-developer/releases/download/v0.18.0/rill_linux_amd64.zip -O /tmp/rill_linux_amd64.zip \
     && unzip /tmp/rill_linux_amd64.zip rill -d /usr/local/bin \
     && chmod +x /usr/local/bin/rill \
     && rm /tmp/rill_linux_amd64.zip
